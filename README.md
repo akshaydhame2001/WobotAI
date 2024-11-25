@@ -37,7 +37,7 @@ Follow these steps to clone, set up, and run the project:
    Once cloned, navigate to the project directory:
 
    ```bash
-   cd wobot-ai-cameras-dashboard
+   cd WobotAI
    ```
 
 3. **Install dependencies**
