@@ -8,11 +8,12 @@ URL: https://wobot-ai-dun.vercel.app/
 ## Features
 
 - UI is mobile responsive
-- Debouncing hook for search
-- Pagination
+- API Integration
+- Debouncing hook for camera search
 - Location and Status Filters
 - Status toggle "Active" | "Inactive"
 - Delete Functionality
+- Pagination
 - Per page item selector
 - Horizontal scrollbar in table for mobile
 - Scrollbars for long select items list
@@ -62,10 +63,5 @@ Follow these steps to clone, set up, and run the project:
 
 This will start the development server, and you can view the dashboard in your browser at http://localhost:3000.
 
-Note:
-This dashboard is currently using a dummy database array with mocking fetch using setTimeout because the Wobot AI API server is down.
-
-- Camera Fetch API: https://api-app-staging.wobot.ai/app/v1/fetch/cameras : This was working initial but after some request it failed to connect.
-- Camera Status API: https://api-app-staging.wobot.ai/app/v1/update/camera/status : This was giving 404 Not found error for given payload format (e.g. {"id": 2, "status": "Active"}) and later failed to connect.
-
-To use the real API, uncomment the code in the context/CameraContext.js file where the API call is made (look for the // API call section) to enable interaction with the actual backend.
+- Camera Fetch API (GET): https://api-app-staging.wobot.ai/app/v1/fetch/cameras
+- Camera Status API (PUT): https://api-app-staging.wobot.ai/app/v1/update/camera/status
